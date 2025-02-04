@@ -1,13 +1,12 @@
 import banco from '../config/banco.js';
 
-const Aluno = banco.sequelize.define(){
+const Aluno = banco.sequelize.define({
     nome:{
         type:banco.Sequelize.STRING(100)
     },
     telefone:{
         type:banco.Sequelize.INTEGER(15)
     },
-
     email:{
         type:banco.Sequelize.STRING(100)
     },
@@ -17,6 +16,8 @@ const Aluno = banco.sequelize.define(){
     situacao:{
         type:banco.Sequelize.STRING(100)
     }
-}
+})
+    
+
 
 export default Aluno;
