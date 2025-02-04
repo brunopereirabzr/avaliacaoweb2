@@ -1,6 +1,6 @@
-import aluno from "../controllers/Aluno";
+import alunoController from "../controllers/AlunoController.js";
 
-router.get('/', PessoaController.index);
-router.get('/cadastrar', PessoaController.cadastrar);
+router.get('/', alunoController.index);
+router.get('/cadastrar', alunoController.cadastrar);
 
 export default aluno;

@@ -26,8 +26,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 ///ROTAS DO SISTEMA
-app.get('/', function(req, res){
-    res.render('index')
-})
+
+import rotaAluno from './routes/Aluno.js'
+app.get('/', rotaAluno);
 
 app.listen(5000, ()=> console.log('Servidor Rodando em http://localhost:5000'))
